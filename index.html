@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/chat.css">
+</head>
+
+<body>
+  <div class="isi-fiture">
+    <div class="isi-atas">
+      <a href="#" id="home"><i class="bi bi-house"
+          style="font-size:20px; color: #000;"></i></a>
+      <a href="chat.html" id="chat"><i class="bi bi-chat-left"></i><span
+          id="notification-counts">99+</span></a>
+      <a href="#" id="notification"><i class="bi bi-bell"></i><span
+          id="notification-counts">99+</span></a>
+      <a href="contact.html" id="contact"><i class="bi bi-person"
+          style="font-size: 20px; color: #000;"></i></a>
+      <a href="#" id="story"><i class="bi bi-bullseye"
+          style="font-size: 20px; color: #000;"></i></a>
+    </div>
+    <div class="isi-bawah">
+      <center>
+        <a href="#" style="display: block; margin-bottom: 8px;"><i class="bi bi-star"
+            style="font-size: 20px; color: #000;"></i></a><br>
+        <a href="#" style="display: block; margin-bottom: 8px;"><i class="bi bi-archive"
+            style="font-size: 20px; color: #000;"></i></a><br>
+        <a href="#" style="display: block;"><i class="bi bi-gear" style="font-size: 20px; color: #000;"></i></a>
+      </center>
+    </div>
+  </div>
+  <div class="wadah" id="wadah">
+    <div class="user-chat">
+      <div class="search-container">
+        <i class="bi bi-search"></i>
+        <input type="text" id="searchInput" class="search-box" placeholder="Search chat...">
+      </div>
+      <div class="menu-user">
+        <div class="ini-user" onclick="showChat()">
+          <img src="images/img1.jpg" alt="pp-profile" class="foto">
+          <p>idoy</p>
+        </div>
+        <div class="ini-user" onclick="showChat()">
+          <img src="images/img2.jpg" alt="pp-profile" class="foto">
+          <p>kepodeh</p>
+        </div>
+      </div>
+    </div>
+    <div class="welcome">
+      <div class="isi-welcome">
+        <center>
+          <img src="img/pertama.webp" class="img-welcome ">
+          <h4 id="typing-text"></h4>
+          <p style="margin-top: -20px; font-size: 14px;">Chat-if lets users send and receive messages without having to
+            keep their phones online.</p>
+          <p style="margin-top: 60px; font-size: 14px;"><i class="bi bi-lock"></i> End-to-end encrypted</p>
+        </center>
+      </div>
+    </div>
+    <div class="isi-chat" style="display: none;">
+      <div class="judul-chat">
+        <div class="judul-isi">
+          <img src="images/img1.jpg" alt="fotoprofile" class="foto">
+          <div class="name-user">
+            <p>idoy</p>
+            <p style="font-size: 9px; margin-top: -15px;">terakhir terlihat kemarin</p>
+          </div>
+        </div>
+        <div class="fungsi">
+          <button class="call"><i class="bi bi-telephone"></i></button>
+          <button class="call"><i class="bi bi-camera-video"></i></button>
+          <button class="cari"><i class="bi bi-search"></i></i></button>
+        </div>
+      </div>
+      <div class="room-chat">
+        <div class="isi-massage">
+          <div class="massage">
+            ikan gurame ikan gabus biar silaturahmi tidak terputus bolehlah pinjam seratus
+          </div>
+          <div class="user-massage">
+            Dengan menetapkan min-width: 100px; dan max-width: 300px;, lebar .massage akan disetel minimal 100px dan
+            maksimal 300px. Jika teksnya melebihi 300px, maka lebar akan tetap 300px. Semoga ini membantu!
+          </div>
+          <div class="user-massage">
+            Dengan menetapkan min-width: 100px; dan max-width: 300px;, lebar .massage akan disetel minimal 100px dan
+            maksimal 300px. Jika teksnya melebihi 300px, maka lebar akan tetap 300px. Semoga ini membantu!
+          </div>
+          <div class="user-massage">
+            Dengan menetapkan min-width: 100px; dan max-width: 300px;, lebar .massage akan disetel minimal 100px dan
+            maksimal 300px. Jika teksnya melebihi 300px, maka lebar akan tetap 300px. Semoga ini membantu!
+          </div>
+          <div class="user-massage">
+            Dengan menetapkan min-width: 100px; dan max-width: 300px;, lebar .massage akan disetel minimal 100px dan
+            maksimal 300px. Jika teksnya melebihi 300px, maka lebar akan tetap 300px. Semoga ini membantu!
+          </div>
+          <div class="user-massage">
+            Dengan menetapkan min-width: 100px; dan max-width: 300px;, lebar .massage akan disetel minimal 100px dan
+            maksimal 300px. Jika teksnya melebihi 300px, maka lebar akan tetap 300px. Semoga ini membantu!
+          </div>
+          <div class="user-massage">
+            Dengan menetapkan min-width: 100px; dan max-width: 300px;, lebar .massage akan disetel minimal 100px dan
+            maksimal 300px. Jika teksnya melebihi 300px, maka lebar akan tetap 300px. Semoga ini membantu!
+          </div>
+          <div class="user-massage">
+            Dengan menetapkan min-width: 100px; dan max-width: 300px;, lebar .massage akan disetel minimal 100px dan
+            maksimal 300px. Jika teksnya melebihi 300px, maka lebar akan tetap 300px. Semoga ini membantu!
+          </div>
+          <div class="user-massage">
+            Dengan menetapkan min-width: 100px; dan max-width: 300px;, lebar .massage akan disetel minimal 100px dan
+            maksimal 300px. Jika teksnya melebihi 300px, maka lebar akan tetap 300px. Semoga ini membantu!
+          </div>
+          <div class="user-massage">
+            Dengan menetapkan min-width: 100px; dan max-width: 300px;, lebar .massage akan disetel minimal 100px dan
+            maksimal 300px. Jika teksnya melebihi 300px, maka lebar akan tetap 300px. Semoga ini membantu!
+          </div>
+          <div class="user-massage">
+            Dengan menetapkan min-width: 100px; dan max-width: 300px;, lebar .massage akan disetel minimal 100px dan
+            maksimal 300px. Jika teksnya melebihi 300px, maka lebar akan tetap 300px. Semoga ini membantu!
+          </div>
+          <div class="user-massage">
+            Dengan menetapkan min-width: 100px; dan max-width: 300px;, lebar .massage akan disetel minimal 100px dan
+            maksimal 300px. Jika teksnya melebihi 300px, maka lebar akan tetap 300px. Semoga ini membantu!
+          </div>
+          <div class="user-massage">
+            Dengan menetapkan min-width: 100px; dan max-width: 300px;, lebar .massage akan disetel minimal 100px dan
+            maksimal 300px. Jika teksnya melebihi 300px, maka lebar akan tetap 300px. Semoga ini membantu!
+          </div>
+        </div>
+    
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="toggleModal()">&times;</span>
+            <center>
+              <p>image</p>
+              <p>kontak</p>
+              <p>dokumen</p>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="from-input">
+        <div class="button-user">
+          <input class="enter" type="text" placeholder="Type a massage">
+          <button class="kirim-mobile"><i class="bi bi-send"></i></button>
+        </div>
+        <div class="tombol">
+          <button class="kirim" style="margin-left: 20px;"><i class="bi bi-send"></i></button>
+          <button class="emot" style="margin-left: 10px;"><i class="bi bi-emoji-smile"></i></button>
+          <button class="link" onclick="toggleModal()" style="margin-left: 10px;"><i
+              class="bi bi-link-45deg"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/chat.js"></script>
+</body>
+
+</html>

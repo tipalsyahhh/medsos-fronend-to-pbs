@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+  <div class="isi-fiture">
+    <div class="isi-atas">
+      <a href="#" id="home"><i class="bi bi-house"
+          style="font-size:20px; color: #000;"></i></a>
+      <a href="chat.html" id="chat"><i class="bi bi-chat-left"></i><span
+          id="notification-counts">99+</span></a>
+      <a href="#" id="notification"><i class="bi bi-bell"></i><span
+          id="notification-counts">99+</span></a>
+      <a href="contact.html" id="contact"><i class="bi bi-person"
+          style="font-size: 20px; color: #000;"></i></a>
+      <a href="#" id="story"><i class="bi bi-bullseye"
+          style="font-size: 20px; color: #000;"></i></a>
+    </div>
+    <div class="isi-bawah">
+      <center>
+        <a href="#" style="display: block; margin-bottom: 8px;"><i class="bi bi-star"
+            style="font-size: 20px; color: #000;"></i></a><br>
+        <a href="#" style="display: block; margin-bottom: 8px;"><i class="bi bi-archive"
+            style="font-size: 20px; color: #000;"></i></a><br>
+        <a href="#" style="display: block;"><i class="bi bi-gear" style="font-size: 20px; color: #000;"></i></a>
+      </center>
+    </div>
+  </div>
+  <div class="wadah" id="wadah">
+    <div class="user-chat">
+      <div class="search-container">
+        <i class="bi bi-search"></i>
+        <input type="text" id="searchInput" class="search-box" placeholder="Search chat...">
+      </div>
+      <div class="menu-user">
+        <div class="ini-user" onclick="showChat()">
+          <img src="images/img1.jpg" alt="pp-profile" class="foto">
+          <p>idoy</p>
+        </div>
+        <div class="ini-user" onclick="showChat()">
+          <img src="images/img2.jpg" alt="pp-profile" class="foto">
+          <p>kepodeh</p>
+        </div>
+      </div>
+    </div>
+    <div class="welcome">
+      <div class="isi-welcome">
+        <center>
+          <i class="bi bi-file-person"></i>
+          <h4>Contacts</h4>
+        </center>
+      </div>
+    </div>
+    <div class="profile-case" style="display: none;">
+      <div class="profile-details">
+        <div class="profile-picture"></div>
+        <div class="profile-username">Rahmat Jaelani</div>
+        <div class="profile-user-id">@rahmatboy123</div>
+        <div class="profile-actions">
+          <i class="bi bi-telephone-fill"></i>
+          <i class="bi bi-chat-dots-fill"></i>
+          <i class="bi bi-camera-video-fill"></i>
+          <i class="bi bi-trash-fill"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/contact.js"></script>
+</body>
+
+</html>
