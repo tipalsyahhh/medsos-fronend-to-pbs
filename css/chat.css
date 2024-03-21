@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .wadah {
@@ -32,7 +33,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #333;
+  color: #000;
 }
 
 .img-welcome {
@@ -43,7 +44,7 @@ body {
   position: relative;
   min-height: 25px;
   font-size: 20px;
-  color: #333;
+  color: #000;
 }
 
 #typing-text::after {
@@ -94,6 +95,7 @@ a #notification-counts {
   color: #333232;
   font-weight: bold;
   font-size: 15px;
+  position: relative;
 }
 
 .menu-user {
@@ -335,6 +337,13 @@ a #notification-counts {
   outline: none;
 }
 
+.menu-mobile {
+  display: none;
+}
+
+.close-chat {
+  display: none;
+}
 
 @media (max-width: 768px) {
 
@@ -406,5 +415,64 @@ a #notification-counts {
     height: 30px;
     margin-left: 0;
     margin-top: 2px;
+  }
+
+  .menu-mobile {
+    position: absolute;
+    bottom: 0;
+    height: 65px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-mobile {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .home-mobile {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #52b3d9;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gaya-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #52b3d9;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .gaya-home i {
+    color: #fff;
+    font-size: 22px;
+  }
+  
+  .isi-mobile {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .close-chat {
+    display: block;
+    color: #000;
+    border: none;
+    margin-right: 8px;
+    font-size: 20px;
+    background-color: #fff;
   }
 }
