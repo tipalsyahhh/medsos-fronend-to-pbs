@@ -50,7 +50,8 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    margin: 0;
+    margin: 10px 0;
+	color: #333;
 }
 
 .input-login {
@@ -64,7 +65,7 @@ body {
 .input-register h3 {
 	font-size: 40px;
 	font-weight: bold;
-	margin-bottom: 10vh;
+	margin-bottom: 8vh;
 }
 
 .input-login a,
@@ -133,6 +134,7 @@ input[type="password"]:focus {
 	background-color: transparent;
 	color: #52b3d9;
 	margin: 10px 0;
+	cursor: pointer;
 }
 
 .input-register {
