@@ -1,87 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link href="https://cdn.datatables.net/v/bs4/dt-1.13.6/datatables.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/login.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/build/three.min.js"></script>
+    <script src="https://www.vantajs.com/dist/vanta.birds.min.js"></script>
 </head>
-
 <body>
-    <div class="container" id="container">
-        <center>
-            <form method="POST" action="{{ route('login.authenticate') }}" id="form-case">
-                <div class="form-container sign-in-container">
-                    <!-- Login form contents -->
-                    <h1>Login</h1>
-                    <span>Masukkan Akun Anda</span>
-                    @if (session()->has('error'))
-                        <div id="success-alert" class="alert alert-warning">
-                            {{ session('error') }}
-                        </div>
-                    @endif
-                    <input type="text" name="user" class="form-login" value="" id="inputUsername" placeholder="Username"
-                        required>
-                    <input type="password" name="password" class="form-login" id="inputPassword" placeholder="Password"
-                        required>
-                    <button>Login</button>
-                </div>
-            </form>
-        </center>
-        <div class="card-register">
-            <form method="POST" action="{{ route('register') }}">
+    <div class="content">
+        <div class="card-login">
+            <form action="/chat.html" method="post" class="input-login">
+                <center>
+                    <h3>Sign In</h3>
+                    <h4>Welcome to Chat if</h4>
+                </center>
                 <div class="form-group">
-                    <div class="form-container sign-up-container">
-                        <h2>Register hire</h2>
-                        <center>
-                            <div class="from-register">
-                                <input type="text" name="namadepan" class="form-control" placeholder="Nama Depan"
-                                    value="" required>
-                                <input type="text" name="namabelakang" class="form-control" placeholder="Nama Belakang"
-                                    value="" required>
-                                <input type="text" name="user" class="form-control" placeholder="Username" value=""
-                                    required>
-                                <input type="text" name="nomor_handphone" class="form-control"
-                                    placeholder="Nomor Handphone" value="" required>
-                                <input type="password" name="password" placeholder="Password" class="form-control"
-                                    required>
-                            </div>
-                        </center>
-                        <input type="hidden" name="remember_token"
-                            value="{{ substr(str_shuffle('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'), 0, 60) }}">
-                        <button type="submit" class="btn-register" style="margin-top: 15px;">Daftar</button>
-                    </div>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Password" required> 
+                </div>
+                <center>
+                    <button type="submit" class="button-login" onclick="delaySubmit(event)">Login</button><br/><br/>
+                    <a href="#" id="showRegister">If you don't have an account then <span>register first!</span></a>
+                </center>
+                <div class="garis">
+                    <div class="garis-1"></div><p>or</p><div class="garis-1"></div>
+                </div>
+                <center>
+                    <button class="google">
+                        <img src="img/google.png" alt="with" class="google-img">
+                        <p>Login with google</p>
+                    </button>
+                </center>
             </form>
-        </div>
-        <div class="overlay-container">
-            <!-- Registration form contents -->
-            <div class="overlay">
-                <div class="overlay-panel overlay-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Jika belum punya akun silakan registrasi terlebih dahulu</p>
-                    <div class="btn-register">
-                        <button id="register">register</button>
-                    </div>
+            
+            <form action="/login.html" method="post" class="input-register">
+                <center>
+                    <h3>Register here</h3>
+                    <h4>Welcome to Chat if</h4>
+                </center>
+                <div class="form-group">
+                    <input type="text" id="username" name="username" placeholder="Enter username" required>
                 </div>
-                <div class="overlay-panel overlay-left">
-                    <h2>Welcome Back!</h2>
-                    <p>Jika sudah punya akun mari kita login untuk mendapatkan info terbaru</p>
-                    <div class="btn-register">
-                        <button id="login">Login</button>
-                    </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Enter password" required> 
                 </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Enter email" required> 
+                </div>
+                <center>
+                    <button type="submit" class="button-login" onclick="delaySubmit(event)">Register</button><br/><br/>
+                    <a href="#" id="showLogin">Return to the login page</a>
+                </center>
+            </form>
+            
+            <div class="gambar-login">
+                <img src="img/login.png" alt="login" class="img-login">
+                <h5>Jika belum memiliki akun silahkan daftar terlebuh dahulu</h5>
             </div>
-        </div>
+        </div>        
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="login.js"></script>
-
+    <script src="js/login.js"></script>
 </body>
-
 </html>
