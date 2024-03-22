@@ -95,7 +95,7 @@ input[type="password"]:focus {
 }
 
 .button-login {
-	margin-top: 5vh;
+	margin-top: 4vh;
 	height: 35px;
 	width: 150px;
 	border-radius: 50px;
@@ -127,6 +127,13 @@ input[type="password"]:focus {
 	animation: loading 0.6s linear infinite;
 	margin-left: 5px;
   }
+
+.forgot {
+	border: none;
+	background-color: transparent;
+	color: #52b3d9;
+	margin: 10px 0;
+}
 
 .input-register {
 	display: none;
